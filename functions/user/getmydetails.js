@@ -2,7 +2,7 @@ import express from "express"
 import jwt from "jsonwebtoken"
 import { user } from "../../utils/schema.js";
 import cp from "cookie-parser";
-import { isauth } from "../isuth.js";
+import { isauth } from "../isauth.js";
 const app=express();
 app.use(cp());
 export const getmydetails=async(req,res)=>{

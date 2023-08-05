@@ -30,5 +30,8 @@ export const loginfunc = async (req, res) => {
             message: "logedin"
         })
     }
+    else{
+        return next(new errorkiclass("invalid password",404));
+    }
 
 }

@@ -3,7 +3,7 @@ import { loginfunc } from "../functions/user/loginfunc.js";
 import { logout } from "../functions/user/logout.js";
 import {getmydetails} from "../functions/user/getmydetails.js"
 import { register } from "../functions/user/register.js";
-import { isauth } from "../functions/isuth.js";
+import { isauth } from "../functions/isauth.js";
 const userrouter=express.Router();
 
 // userrouter.get("/",(req,res)=>{
