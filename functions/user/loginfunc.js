@@ -11,7 +11,7 @@ config({ path: "../congfig.env" })
 const app = express();
 app.use(cp());
 app.use(express.urlencoded({ extended: true }))
-export const loginfunc = async (req, res) => {
+export const loginfunc = async (req, res,next) => {
     const { email, password } = req.body;
     const b = await user.findOne({ email });
     if (!b) {
