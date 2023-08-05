@@ -20,6 +20,7 @@ export const loginfunc = async (req, res,next) => {
     const match = await bcrypt.compare(password, b.password);
     if (match) {
         const codedid = jwt.sign({ _id: b._id }, process.env.secretkey);
+        // console.log(b.name)
         res.cookie("token", codedid, {
             httpOnly: true,
             expires: new Date(Date.now() + 20 * 1000 * 60),
@@ -27,7 +28,8 @@ export const loginfunc = async (req, res,next) => {
             secure: true,
         }).json({
             sucess: true,
-            message: "logedin"
+            message: "logedin",
+            name:b.name
         })
     }
     else{
