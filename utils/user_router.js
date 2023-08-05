@@ -16,7 +16,7 @@ const userrouter=express.Router();
 //     res.render("login.ejs");
 // })
 userrouter.get("/logout",logout)
-userrouter.get("/user",isauth,getmydetails)
+// userrouter.get("/user",isauth,getmydetails)
 // userrouter.get("/register",(req,res)=>{
 //     res.render("register.ejs");
 // })

@@ -1,5 +1,5 @@
 import express from "express";
-import { isauth } from "../functions/isuth.js";
+import { isauth } from "../functions/isauth.js";
 import {newtask} from "../functions/task/newtask.js"
 import {mytasks} from "../functions/task/mytasks.js"
 import { updatetask } from "../functions/task/updatetask.js";
