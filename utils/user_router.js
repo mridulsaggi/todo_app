@@ -15,11 +15,12 @@ const userrouter=express.Router();
 // userrouter.get("/login",(req,res)=>{
 //     res.render("login.ejs");
 // })
-userrouter.get("/logout",logout)
-// userrouter.get("/user",isauth,getmydetails)
 // userrouter.get("/register",(req,res)=>{
 //     res.render("register.ejs");
 // })
+
+userrouter.get("/logout",logout)
+userrouter.get("/user",isauth,getmydetails)
 userrouter.post("/login",loginfunc)
 userrouter.post("/register",register)
 userrouter.post("/todo",(req,res)=>{
